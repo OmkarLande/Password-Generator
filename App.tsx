@@ -64,7 +64,6 @@ export default function App() {
       result += characters.charAt(characterIndex);
     }
     return result;
-    console.log('hitesh');
   };
 
   const resetPasswordState = () => {
@@ -85,7 +84,6 @@ export default function App() {
             initialValues={{passwordLength: ''}}
             validationSchema={PasswordSchema}
             onSubmit={values => {
-              console.log(values);
               generatePasswordString(+values.passwordLength);
             }}>
             {({
